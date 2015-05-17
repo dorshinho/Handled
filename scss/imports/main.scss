@@ -392,7 +392,7 @@ body.inner_page .bg_parallax {
     font-size: 15px;
     font-weight: 300;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #ffffff;
+    color: #000000;
 }
 
 .start_descrition h2 {
@@ -2625,7 +2625,63 @@ background: #6b6b6b;
   top: 50%;
 }
 
+/* Tooltips */
+.cbp-pgopttooltip {
+    position: absolute;
+    bottom: 180%;
+    margin-bottom: 0px;
+    background: #fff;
+    padding: 25px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    border: 3px solid #47a3da;
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: visibility 0s 0.3s, opacity 0.3s, bottom 0.3s;
+    -moz-transition: visibility 0s 0.3s, opacity 0.3s, bottom 0.3s;
+    transition: visibility 0s 0.3s, opacity 0.3s, bottom 0.3s;
+}
 
+.cbp-pgoptions li:hover .cbp-pgopttooltip,
+.cbp-pgoptions li.cbp-pgoption-active .cbp-pgopttooltip {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+    bottom: 100%;
+    pointer-events: auto;
+}
+
+.cbp-pgopttooltip:after,
+.cbp-pgopttooltip:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.cbp-pgopttooltip:after {
+    border-color: transparent;
+    border-top-color: #fff;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.cbp-pgopttooltip:before {
+    border-color: transparent;
+    border-top-color: #47a3da;
+    border-width: 14px;
+    left: 50%;
+    margin-left: -14px;
+}
 
 
 
