@@ -27,7 +27,7 @@
             "dashboard": "dashboard",
             "details": "details",
             "games": "games",
-            "*default": "signup"
+            "*default": "home"
         },
         signup: function() {
             this.signupView.render().then(function() {
@@ -163,7 +163,7 @@
 
     Backbone.HomeView = Backbone.TemplateView.extend({
         el: ".yo",
-        view: "home"
+        view: "home",
     })
 
 
