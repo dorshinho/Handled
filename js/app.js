@@ -23,9 +23,9 @@ function app() {
         // {
         //     url: "//maps.googleapis.com/maps/api/js?libraries=places&sensor=true"
         // },
-        // {
-        //     url: "./js/gmaps.js"
-        // },
+        {
+            url: "./js/gmaps.js"
+        },
         // when using just Backbone, use this line
         {
             url: "./bower_components/backbone/backbone.js"

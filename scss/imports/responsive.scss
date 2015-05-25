@@ -631,6 +631,43 @@ body.inner_page .bg_parallax {
     color: #ffffff;
     line-height: 28px;
 }
+.start_textbox {
+    z-index: 9;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    top: 0%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    left: 50%;
+    margin-left: -40%;
+}
+.start_textbox .btns a {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: 30px 0px !important;
+}
+
+.bgg {display: none;}
+.start_textbox h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+.start_textbox h1 span {
+    background: #E73931;
+}
+.start_textbox span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 28px;
+}
+
 .search {display: none;}
 .log_btn     {
     margin-top: -10px;
