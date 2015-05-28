@@ -47,39 +47,12 @@
                     })
 
                     this.map2.addMarker({
-                        lat: 29.637975,
-                        lng: -95.395283,
-                        title: 'Houston Sports Complex',
+                        lat: 29.765709,
+                        lng: -95.371317,
+                        title: 'Houston Municipal Couthouse',
 
                         click: function(e) {
                             alert('You clicked in this marker');
-                        }
-                    });
-
-                    this.map2.addMarker({
-                        lat: 29.748395,
-                        lng: -95.353005,
-                        title: 'Houston Street Soccer',
-
-                        click: function(e) {
-                            this.map2 = GMaps.createPanorama({
-                                el: '#map2',
-                                lat: 29.748395,
-                                lng: -95.353005,
-                            });
-                        }
-                    });
-                    this.map2.addMarker({
-                        lat: 30.075296,
-                        lng: -95.214665,
-                        title: 'Northpark Soccer Fields',
-
-                        click: function(e) {
-                            this.map2 = GMaps.createPanorama({
-                                el: '#map',
-                                lat: 30.075296,
-                                lng: -95.214665,
-                            });
                         }
                     });
 
